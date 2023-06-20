@@ -14,7 +14,7 @@ public class AutoUser {
 		
 		//1.Open chrome browser
 		
-		//2.automationpractice home page
+		//2.automationpractic home page
 		
 		System.setProperty("webdriver.chrome.driver", "/home/sivaops7/Devops/selenium/chrome/chromedriver");
 		
@@ -43,14 +43,13 @@ public class AutoUser {
 		suCreate.click();
 		
 		
-		WebElement GenDer= driver.findElement(By.name("id_gender"));
+		//WebElement GenDer= driver.findElement(By.xpath("/html/body/div/div[2]/div/div[3]/div/div/form/div[1]/div[1]/div[1]/label"));
 		
-		Select select = new Select(GenDer);
-		
-		select.selectByValue("1");
+		//GenDer.click();
 				
 		WebElement creName= driver.findElement(By.name("customer_firstname"));
 		creName.sendKeys("siva");
+		
 		
 		WebElement laName= driver.findElement(By.name("customer_lastname"));
 		laName.sendKeys("Balan");
@@ -62,20 +61,22 @@ public class AutoUser {
 		
 		Select select1 = new Select(dropDown1);
 		
-		select.selectByValue("7");
+		select1.selectByValue("7");
 		
 		WebElement dropDown2= driver.findElement(By.name("months"));
 		
 		Select select2 = new Select(dropDown2);
 		
-		select.selectByValue("4");
+		select2.selectByValue("4");
 		
 		WebElement dropDown3= driver.findElement(By.name("year"));
 		
 		Select select3 = new Select(dropDown3);
 		
-		select.selectByValue("1992");
+		select3.selectByValue("1992");
 		
+		WebElement creAcc= driver.findElement(By.id("submitAccount"));
+		creAcc.click();
 		
 		
 		
