@@ -42,10 +42,11 @@ public class AutoUser {
 		WebElement suCreate= driver.findElement(By.name("SubmitCreate"));
 		suCreate.click();
 		
+	thread.sleep(10000);
 		
-		//WebElement GenDer= driver.findElement(By.xpath("/html/body/div/div[2]/div/div[3]/div/div/form/div[1]/div[1]/div[1]/label"));
+		WebElement GenDer= driver.findElement(By.xpath("/html/body/div/div[2]/div/div[3]/div/div/form/div[1]/div[1]/div[1]/label"));
 		
-		//GenDer.click();
+		GenDer.click();
 				
 		WebElement creName= driver.findElement(By.name("customer_firstname"));
 		creName.sendKeys("siva");
